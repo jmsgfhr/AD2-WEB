@@ -1,0 +1,322 @@
+header {
+    display: block;
+    margin-bottom: 1px;
+}
+
+nav {
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+nav ul {
+    color: #332277;
+    line-height: 230%;
+    margin-top: 40px;
+    list-style-type: circle;
+}
+
+section {
+    display: block;
+    width: 70%;
+    float: right;
+}
+
+body {
+    background-color: #EEBB88;
+    color: #402020;
+    font-size: 16px;
+    font-family: 'Stoke', 'Lucida Bright', 'Liberation';
+}
+
+a {
+    text-decoration: none;
+    color: #603030;
+}
+
+a:visited {
+    color: #603030;
+}
+
+ol,
+ul {
+    line-height: 200%;
+}
+
+/* Pagina Inicial */
+
+.ender {
+    float: right;
+    text-align: right;
+    line-height: 140%;
+    font-size: 14px;
+    font-family: 'Karla', 'Verdana', 'Ubuntu';
+}
+
+.imgLogo {
+    border-bottom: solid 3px #402020;
+    margin-bottom: 6px;
+    padding-bottom: 15px;
+}
+
+.apres {
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Pagina Cafeteiras */
+
+.titulo {
+    text-align: center;
+}
+
+.listaMaq {
+    width: 340px;
+    color: #402020;
+    background-color: #EEDDCC;
+    padding: 10px 10px 10px 50px;
+    border: 2px solid #402020;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    list-style-type: upper-roman;
+    text-align: left;
+}
+
+.listaMaq ul {
+    color: #402020;
+    list-style-type: square;
+}
+
+.listaMaq .preco {
+    color: #CC0000;
+}
+
+/* Pagina Capsulas */
+
+.tabCap {
+    border: solid 1px;
+    border-collapse: collapse;
+    margin-top: 6px;
+    font-size: 15px;
+    background-color: #EEDDCC;
+    color: #402020;
+    font-family: 'Karla', 'Verdana', 'Ubuntu';
+}
+
+.tabCap th {
+    border: 3px solid #888888;
+    padding: 6px 12px 6px 12px;
+}
+
+.tabCap td {
+    border: 3px solid #000066;
+    padding: 6px 12px 6px 12px;
+}
+
+.tabCap .linTH {
+    color: #ffffff;
+    background-color: #402020;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.tabCap .colTH {
+    color: #ffffff;
+    background-color: #804040;
+    text-align: left;
+}
+
+.tabCap .preco {
+    color: #CC0000;
+}
+
+.tabCap .imgCel {
+    background-color: #ffffff;
+}
+
+.tabCap .imgCel img {
+    width: 60px;
+    height: 60px;
+}
+
+/* Pagina Pedidos */
+
+.FormBox {
+    width: 540px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: #EEDDCC;
+    border: solid 3px #000055;
+    font-size: 16px;
+    font-family: 'Karla', 'Verdana', 'Ubuntu';
+}
+
+.FormBox legend {
+    text-align: left;
+}
+
+.FSLinhaInteira {
+    width: 510px;
+    text-align: left;
+}
+
+.FSEsq {
+    display: inline;
+    margin: 0;
+    float: left;
+}
+
+.FSDir {
+    display: inline;
+    margin: 0;
+    float: right;
+}
+
+fieldset .LinhaForm {
+    margin: 0;
+    height: 30px;
+    padding: 6px 3px 0 3px;
+}
+
+fieldset .ColEsq {
+    width: 180px;
+    float: left;
+    display: block;
+}
+
+fieldset .ColDir {
+    width: 180px;
+    float: right;
+    display: block;
+}
+
+fieldset .LabBox {
+    width: 130px;
+    float: left;
+    display: block;
+}
+
+.botoes {
+    text-align: right;
+    margin: 20px 10px 0px 10px;
+}
+
+.InpBoxMed {
+    width: 80px;
+}
+
+.numDD {
+    width: 35px;
+}
+
+.ColEsqSelProd {
+    width: 360px;
+    float: left;
+    display: block;
+}
+
+.LabBoxSel {
+    width: 90px;
+    float: left;
+    display: block;
+}
+
+.LabBoxQtd {
+    width: 40px;
+    float: left;
+    display: block;
+}
+
+.ColEsqValUnit {
+    width: 250px;
+    float: left;
+    display: block;
+}
+
+.InpBoxMedLeft {
+    width: 80px;
+    float: left;
+    display: block;
+}
+
+.selMaquina {
+    width: 75%;
+}
+
+.selCapsula {
+    width: 75%;
+}
+
+.boxPedidos {
+    margin: 0;
+    height: 90px;
+    padding: 6px 3px 0 3px;
+}
+
+.lisPedArea {
+    height: 90%;
+    width: 100%;
+}
+
+/* Pagina Identificacao */
+
+.divLinha {
+    margin: 0;
+    width: 500px;
+    padding: 6px 3px 0 3px;
+}
+
+.colPri {
+    width: 90px;
+    float: left;
+    display: block;
+}
+
+.colLabCrd {
+    width: 270px;
+    height: 45px;
+    text-align: left;
+    /* float: left; */
+}
+
+.colValTot {
+    width: 220px;
+    text-align: left;
+    float: left;
+    display: block;
+}
+
+.listaCompras {
+    width: 190px;
+    height: 200px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    margin-left: 4px;
+    float: right;
+}
+
+.InpBoxGnd {
+    width: 380px;
+}
+
+.numQD {
+    width: 50px;
+}
+
+.inpNCC {
+    width: 130px;
+}
+
+.inpTelef {
+    width: 90px;
+}
+
+.inpEnder {
+    width: 180px;
+    height: 60px;
+}
+
+.radioBand{
+    float: left;
+}
