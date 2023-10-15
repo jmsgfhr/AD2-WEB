@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Stoke?query=stoke">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Karla?query=karla">
+    <script type="text/javascript" src="js/Cafeteiras.js"></script>
 </head>
 
 <body>
@@ -27,22 +28,10 @@
     <section>
         <p class="titulo">Cafeteiras</p>
         <ol class="listaMaq">
-            <li>Dolce Gusto:<br>
-                <ul>
-                    <li>Mini ME (R$ <span class="preco">480,00</span>)</li>
-                    <li>Genio S Plus (R$ <span class="preco">530,00</span>)</li>
-                </ul>
-            </li>
-            <li>Nespresso:<br>
-                <ul>
-                    <li>Inissia (R$ <span class="preco">500,00</span>)</li>
-                </ul>
-            </li>
-            <li>Três Corações:<br>
-                <ul>
-                    <li>LOV (R$ <span class="preco">400,00</span>)</li>
-                </ul>
-            </li>
+            <li onclick="AbrirMiniME()">Mini ME</li>
+            <li onclick="AbrirGenioS()">Genio S Plus</li>            
+            <li onclick="AbrirInissia()">Inissia</li>            
+            <li onclick="AbrirLOV()">LOV</li>            
         </ol>
     </section>
 </body>

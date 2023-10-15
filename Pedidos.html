@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Stoke?query=stoke">
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Karla?query=karla">
+    <script type="text/javascript" src="js/Pedidos.js"></script>
 </head>
 
 <body>
@@ -32,63 +33,62 @@
                     <div class="LinhaForm">
                         <div class="ColEsqSelProd">
                             <label for="selMaquina" class="LabBoxSel">Máquinas</label>
-                            <select class="selMaquina" id="selMaquina" name="selMaquina">
+                            <select class="selMaquina" id="selMaquina" name="selMaquina" onchange="ChangeMaquina()">
                                 <option value="-----">-----</option>
                                 <optgroup label="Dolce Gusto">
-                                    <option value="MiniME">Mini ME</option>
-                                    <option value="GenioSPlus">Genio S Plus</option>
+                                    <option value="480">Mini ME</option>
+                                    <option value="530">Genio S Plus</option>
                                 </optgroup>
                                 <optgroup label="Nespresso">
-                                    <option value="Inissia">Inissia</option>
+                                    <option value="500">Inissia</option>
                                 </optgroup>
                                 <optgroup label="Três Corações">
-                                    <option value="LOV">LOV</option>
+                                    <option value="400">LOV</option>
                                 </optgroup>
                             </select>
                         </div>
                         <div class="LabBox">
                             <label for="maquinaQtd" class="LabBoxQtd">Qtd:</label>
-                            <input type="number" maxlength="2" class="numDD" id="maquinaQtd" name="maquinaQtd">
+                            <input type="number" maxlength="2" min="1" max="5" value="1" class="numDD" id="maquinaQtd" name="maquinaQtd" onchange="ChangeMaquina()">
                         </div>
+                        <input id="plusMaquina" type="button" value="+" onclick="AddMaquina()">
                     </div>
 
                     <div class="LinhaForm">
                         <div class="ColEsqSelProd">
                             <label for="selCapsula" class="LabBoxSel">Cápsulas:</label>
-                            <select class="selCapsula" id="selCapsula" name="selCapsula">
+                            <select class="selCapsula" id="selCapsula" name="selCapsula" onchange="ChangeCapsula()">
                                 <option value="-----">-----</option>
                                 <optgroup label="Tipo Dolce Gusto">
-                                    <option value="DolceGustoEspresso">Dolce Gusto Espresso</option>
-                                    <option value="DolceGustoIntenso">Dolce Gusto Intenso</option>
+                                    <option value="18">Dolce Gusto Espresso</option>
+                                    <option value="19">Dolce Gusto Intenso</option>
                                 </optgroup>
                                 <optgroup label="Tipo Três Corações">
-                                    <option value="ForcaVibrante">Força / Vibrante</option>
+                                    <option value="44">Força / Vibrante</option>
                                 </optgroup>
                                 <optgroup label="Tipo Nespresso">
-                                    <option value="TresCoracoesIntenso">Três Corações Intenso</option>
-                                    <option value="LorForza">Lor Forza</option>
+                                    <option value="20">Três Corações Intenso</option>
+                                    <option value="21">Lor Forza</option>
                                 </optgroup>
 
                             </select>
                         </div>
                         <div class="LabBox">
                             <label for="capsulaQtd" class="LabBoxQtd">Qtd:</label>
-                            <input type="number" maxlength="2" class="numDD" id="capsulaQtd" name="capsulaQtd">
+                            <input type="number" maxlength="2" min="1" max="30" value="1" class="numDD" id="capsulaQtd" name="capsulaQtd" onchange="ChangeCapsula()">
                         </div>
+                        <input id="plusCapsula" type="button" value="+" onclick="AddCapsula()">
                     </div>
 
                     <div class="LinhaForm">
                         <div class="ColEsqValUnit">
-                            <label for="valUnit">Valor Unitário: R$</label>
+                            <label for="valUnit">Valor X QTD: R$</label>
                             <input type="text" class="InpBoxMed" id="valUnit" name="valUnit" readonly>
-                        </div>
-                        <div class="ColDir">
-                            <input type="button" value="Incluir Produtos">
                         </div>
                     </div>
 
                     <div class="boxPedidos">
-                        <textarea class="lisPedArea"></textarea>
+                        <textarea class="lisPedArea" id="lisPedArea"></textarea>
                     </div>
 
                     <div class="LinhaForm">
@@ -100,8 +100,8 @@
                 </fieldset>
 
                 <div class="botoes">
-                    <input type="submit" value="Continuar">
-                    <input type="button" value="Limpar">
+                    <input type="submit" value="Comprar">
+                    <input type="button" value="Limpar" onclick="Limpar()">
                 </div>
             </form>
         </fieldset>

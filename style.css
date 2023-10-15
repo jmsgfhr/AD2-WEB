@@ -192,7 +192,7 @@ fieldset .ColDir {
 }
 
 fieldset .LabBox {
-    width: 130px;
+    width: 110px;
     float: left;
     display: block;
 }
@@ -319,4 +319,11 @@ fieldset .LabBox {
 
 .radioBand{
     float: left;
+}
+
+/* Janelas Cafeteiras */
+
+.centerElement{
+    display: block;
+    margin: 0 auto;
 }
